@@ -6,7 +6,7 @@ char* passphrase = "idontknow?"; // enter the password
 WiFiServer server(80);
 WiFiClient client;
 unsigned long myChannelNumber = 1;
-const char * myWriteAPIKey = "2AENL5MMRI9UHOSR";
+const char * myWriteAPIKey = "YOURKEY";
 unsigned long lastTime = 0;
 unsigned long timerDelay = 1000;
 #define DHTPIN 27 // Digital pin connected to the DHT sensor
