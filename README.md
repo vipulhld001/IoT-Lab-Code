@@ -4,17 +4,12 @@ Please make sure you are using a network that allows ThingSpeak to access your n
 
 # ESP32 & DHT11 Weather Station with ThingSpeak
 
-An IoT-based environmental monitoring system that leverages an **ESP32** microcontroller and a **DHT11** sensor to measure temperature and relative humidity. Data is transmitted securely over Wi-Fi and visualized in real-time using the **ThingSpeak** cloud platform.
+An IoT-based environmental monitoring system that leverages an **ESP32** microcontroller and a **DHT11** sensor to measure temperature and relative humidity. Data is transmitted securely over Wi-Fi and visualised in real-time using the **ThingSpeak** cloud platform.
 
 ---
 
-# ESP32 & DHT11 Weather Station with ThingSpeak
 
-An IoT-based environmental monitoring system that leverages an **ESP32** microcontroller and a **DHT11** sensor to measure temperature and relative humidity. Data is transmitted securely over Wi-Fi and visualized in real-time using the **ThingSpeak** cloud platform.
-
----
-
-## 📊 System Architecture
+## System Architecture
 
 ```text
 +-------------------+             Signal             +-------------------+
@@ -29,8 +24,8 @@ An IoT-based environmental monitoring system that leverages an **ESP32** microco
                                                      |  Field 3: Temp    |
                                                      |  Field 4: Humid   |
                                                      +-------------------+
-
-## ⚡ Hardware Requirements & Wiring
+```
+## Hardware Requirements & Wiring
 
 ### Components
 * **ESP32 Development Board** (e.g., ESP32 WROOM 32D)
@@ -47,7 +42,7 @@ An IoT-based environmental monitoring system that leverages an **ESP32** microco
 
 ---
 
-## 🛠️ Software & Setup Requirements
+## Software & Setup Requirements
 
 ### 1. Arduino IDE Dependencies
 Install the following libraries using the Library Manager (**Sketch** > **Include Library** > **Manage Libraries...**):
@@ -64,13 +59,14 @@ Install the following libraries using the Library Manager (**Sketch** > **Includ
 
 ---
 
-## ⚙️ Firmware Configuration
+## Firmware Configuration
 
 The current code is pre-configured with the following network credentials. Update these variables if your router properties change:
 
-
+```python
 char* ssid = "Woah";             // Wi-Fi Access Point Name
 char* passphrase = "idontknow?"; // Wi-Fi Password
 
 unsigned long myChannelNumber = 1;      // Replace with your actual Channel ID
 const char * myWriteAPIKey = "YOURKEY"; // Replace with your Write API Key
+```
