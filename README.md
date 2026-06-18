@@ -8,20 +8,27 @@ An IoT-based environmental monitoring system that leverages an **ESP32** microco
 
 ---
 
+# ESP32 & DHT11 Weather Station with ThingSpeak
+
+An IoT-based environmental monitoring system that leverages an **ESP32** microcontroller and a **DHT11** sensor to measure temperature and relative humidity. Data is transmitted securely over Wi-Fi and visualized in real-time using the **ThingSpeak** cloud platform.
+
+---
+
 ## 📊 System Architecture
+
+```text
 +-------------------+             Signal             +-------------------+
 |   DHT11 Sensor    | -----------------------------> |   ESP32 Board     |
 | (Temp & Humidity) |      (Data Pin: GPIO 27)       | (NodeMCU / DevKit)|
 +-------------------+                                +-------------------+
-|
-| Wi-Fi Connection
-v
-+-------------------+
-| ThingSpeak Cloud  |
-|  Field 3: Temp    |
-|  Field 4: Humid   |
-+-------------------+
----
+                                                               |
+                                                               | Wi-Fi Connection
+                                                               v
+                                                     +-------------------+
+                                                     | ThingSpeak Cloud  |
+                                                     |  Field 3: Temp    |
+                                                     |  Field 4: Humid   |
+                                                     +-------------------+
 
 ## ⚡ Hardware Requirements & Wiring
 
